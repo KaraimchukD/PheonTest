@@ -13,6 +13,13 @@
 		451EB2032B60DCA900020090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EB2012B60DCA900020090 /* LaunchScreen.storyboard */; };
 		451EB20E2B60DE0E00020090 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB20C2B60DE0E00020090 /* ChatViewController.swift */; };
 		451EB20F2B60DE0E00020090 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451EB20D2B60DE0E00020090 /* ChatViewController.xib */; };
+		451EB21A2B60E1A000020090 /* AnotherMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB2182B60E1A000020090 /* AnotherMessageCollectionViewCell.swift */; };
+		451EB21B2B60E1A000020090 /* AnotherMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451EB2192B60E1A000020090 /* AnotherMessageCollectionViewCell.xib */; };
+		451EB21F2B60E1DB00020090 /* SelfMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB21D2B60E1DB00020090 /* SelfMessageCollectionViewCell.swift */; };
+		451EB2202B60E1DB00020090 /* SelfMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451EB21E2B60E1DB00020090 /* SelfMessageCollectionViewCell.xib */; };
+		451EB2232B60E55E00020090 /* UICollectionView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB2222B60E55E00020090 /* UICollectionView + extension.swift */; };
+		451EB2262B61393100020090 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB2252B61393100020090 /* ChatModel.swift */; };
+		451EB2282B6143B000020090 /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EB2272B6143B000020090 /* UIViewController + extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		451EB2042B60DCA900020090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451EB20C2B60DE0E00020090 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		451EB20D2B60DE0E00020090 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		451EB2182B60E1A000020090 /* AnotherMessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherMessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		451EB2192B60E1A000020090 /* AnotherMessageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnotherMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		451EB21D2B60E1DB00020090 /* SelfMessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		451EB21E2B60E1DB00020090 /* SelfMessageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		451EB2222B60E55E00020090 /* UICollectionView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + extension.swift"; sourceTree = "<group>"; };
+		451EB2252B61393100020090 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		451EB2272B6143B000020090 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			children = (
 				451EB2042B60DCA900020090 /* Info.plist */,
 				451EB20A2B60DDAE00020090 /* Modules */,
+				451EB2212B60E50600020090 /* Extensions */,
 				451EB2112B60DEB700020090 /* Resources */,
 			);
 			path = PheonTest;
@@ -74,6 +89,7 @@
 		451EB20B2B60DDC400020090 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				451EB2242B61391E00020090 /* Model */,
 				451EB2102B60DE3000020090 /* ChatViewController */,
 			);
 			path = Chat;
@@ -82,6 +98,7 @@
 		451EB2102B60DE3000020090 /* ChatViewController */ = {
 			isa = PBXGroup;
 			children = (
+				451EB2122B60E0F100020090 /* CollectionViewItems */,
 				451EB20C2B60DE0E00020090 /* ChatViewController.swift */,
 				451EB20D2B60DE0E00020090 /* ChatViewController.xib */,
 			);
@@ -97,6 +114,50 @@
 				451EB1FF2B60DCA900020090 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		451EB2122B60E0F100020090 /* CollectionViewItems */ = {
+			isa = PBXGroup;
+			children = (
+				451EB21C2B60E1A600020090 /* AnotherMessage */,
+				451EB2172B60E16900020090 /* SelfMessage */,
+			);
+			path = CollectionViewItems;
+			sourceTree = "<group>";
+		};
+		451EB2172B60E16900020090 /* SelfMessage */ = {
+			isa = PBXGroup;
+			children = (
+				451EB21D2B60E1DB00020090 /* SelfMessageCollectionViewCell.swift */,
+				451EB21E2B60E1DB00020090 /* SelfMessageCollectionViewCell.xib */,
+			);
+			path = SelfMessage;
+			sourceTree = "<group>";
+		};
+		451EB21C2B60E1A600020090 /* AnotherMessage */ = {
+			isa = PBXGroup;
+			children = (
+				451EB2182B60E1A000020090 /* AnotherMessageCollectionViewCell.swift */,
+				451EB2192B60E1A000020090 /* AnotherMessageCollectionViewCell.xib */,
+			);
+			path = AnotherMessage;
+			sourceTree = "<group>";
+		};
+		451EB2212B60E50600020090 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				451EB2222B60E55E00020090 /* UICollectionView + extension.swift */,
+				451EB2272B6143B000020090 /* UIViewController + extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		451EB2242B61391E00020090 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				451EB2252B61393100020090 /* ChatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +218,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451EB2202B60E1DB00020090 /* SelfMessageCollectionViewCell.xib in Resources */,
 				451EB2032B60DCA900020090 /* LaunchScreen.storyboard in Resources */,
 				451EB2002B60DCA900020090 /* Assets.xcassets in Resources */,
+				451EB21B2B60E1A000020090 /* AnotherMessageCollectionViewCell.xib in Resources */,
 				451EB20F2B60DE0E00020090 /* ChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,8 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451EB21A2B60E1A000020090 /* AnotherMessageCollectionViewCell.swift in Sources */,
 				451EB1F72B60DCA800020090 /* AppDelegate.swift in Sources */,
+				451EB2282B6143B000020090 /* UIViewController + extension.swift in Sources */,
 				451EB20E2B60DE0E00020090 /* ChatViewController.swift in Sources */,
+				451EB2262B61393100020090 /* ChatModel.swift in Sources */,
+				451EB21F2B60E1DB00020090 /* SelfMessageCollectionViewCell.swift in Sources */,
+				451EB2232B60E55E00020090 /* UICollectionView + extension.swift in Sources */,
 				451EB1F92B60DCA800020090 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
